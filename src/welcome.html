@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chào Mừng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng bạn đến với trang cá nhân!</h1>
+        <p>Bạn đã đăng nhập thành công.</p>
+        <button onclick="logout()">Đăng xuất</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Xử lý đăng xuất
+            alert("Bạn đã đăng xuất!");
+            window.location.href = 'login.html'; // Quay lại trang đăng nhập
+        }
+    </script>
+</body>
+</html>
